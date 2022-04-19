@@ -4,7 +4,7 @@ import { Camera1 } from './camera1'
 import { Light1 } from './light1'
 import { Light2 } from './light2'
 import { Controls1 } from './controls1'
-import { Loader1, mixer } from './loader1'
+import { Loader1 } from './loader1'
 
 export const scene = new THREE.Scene()
 
@@ -43,7 +43,7 @@ function animate() {
 
     controls1.main.update()
 
-    if (mixer) mixer.update(clock.getDelta())
+    if (loader1.mixer2) loader1.mixer2.update(clock.getDelta())
 
     render()
 
