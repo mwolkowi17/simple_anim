@@ -7,6 +7,7 @@ import { Controls1 } from './controls1'
 import { Loader1 } from './loader1'
 
 
+
 export const scene = new THREE.Scene()
 
 const light1 = new Light1()
@@ -65,6 +66,7 @@ const trig6= document.createElement('div')
 trig6.className='trf'
 document.body.appendChild(trig6)
 trig6.addEventListener('mouseover', function(){loader1.play6()})
+
 
 
 const stats = Stats()
